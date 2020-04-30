@@ -1,0 +1,394 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+
+
+/*---HEADER---*/
+
+.header {
+    padding-top: 36px;
+    padding-bottom: 31px;
+}
+
+
+.main-nav-item {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+
+.logo-item-link::first-letter {
+  color: rgb(26, 188, 156);
+}
+
+
+.logo-item-link {
+    text-decoration: none;
+    color: rgb(85, 82, 82);
+    text-transform: uppercase;
+    font-family: "Roboto Light", sans-serif;
+    font-size: 30px;
+    line-height: 32px;
+    float: left;
+}
+
+
+.navigation-item-link {
+    text-transform: uppercase;
+    font-family: "Open+Sans" sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(15, 1, 1);
+    font-size: 14px;
+    line-height: 16px;
+}
+
+
+.navigation-item-link:hover {
+  color: rgb(26, 188, 156);
+}
+
+
+.site-navigation {
+    display: inline-block;
+    list-style: none;
+    float: right;
+    margin-top: 6px;
+}
+
+
+.nav-item {
+    display: inline-block;
+}
+
+
+.nav-item:not(:last-child) {
+    margin-right: 36px;
+}
+
+
+/*---MAIN-SECTION_SLIDER---*/
+.slider {
+    max-width: 1600px;
+    position: relative;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+.main-image::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 600px;
+    background-color: rgba(0, 0, 2, 0.4);
+}
+
+
+
+.main-title {
+    width: 840px;
+    position: absolute;
+    left: 52%;
+    top: 48%;
+    transform: translate(-50%, -50%);
+}
+
+
+.title {
+     margin: 0 0;
+    font-size: 60px;
+    line-height: 82px;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: -1.2px;
+}
+
+
+.title-menu {
+    font-size: 24px;
+    line-height: 54px;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Roboto light", sans-serif;
+}
+
+
+.slider-buttons {
+    width: 1110px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.button-left {
+    display: inline-block;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 104px;
+    height: 104px;
+    float: left;
+    cursor: pointer;
+}
+
+
+.button-right {
+    display: inline-block;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 104px;
+    height: 104px;
+    float: right;
+    cursor: pointer;
+}
+
+
+/*---MAIN-SECTION_COLLECTION---*/
+
+.collection {
+    width: 1600px;
+    margin: 0 auto;
+    background-color: rgb(233, 240, 253);
+    padding-bottom: 100px;
+}
+
+
+.collection-headline {
+    text-transform: uppercase;
+    font-size: 48px;
+    line-height: 58px;
+    padding-top: 100px;
+    margin-bottom: 80px;
+    font-family: "Roboto:wght@400";
+    color: rgb(81, 81, 81);
+    text-align: center;
+}
+
+
+.collection-headline::after {
+  content: '';
+  display: block;
+  width: 164px;
+  height: 7px;
+  background-color: rgb(26, 188, 156);
+  margin: 0 auto;
+  margin-top: 14px;
+}
+
+
+.collection-list {
+    list-style: none;
+    margin: 0 auto;
+}
+
+
+.collection-item {
+    float: left;
+    position: relative;
+}
+
+
+.collection-item:hover .overlay {
+    display: block;
+}
+
+.collection-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+
+.item-name {
+   background-color: rgb(50, 50, 50);
+   float: left;
+   width: 200px;
+   height: 40px;
+}
+
+
+.collection-item:hover .product-name {
+   background-color: rgb(26, 188, 156);
+}
+
+
+.collection-item:hover .item-price {
+   background-color: rgb(127, 217, 199);
+}
+
+
+.item-price {
+   background-color: rgb(140, 140, 140);
+   float: left;
+   width: 55px;
+   height: 40px;
+}
+
+
+.product-name {
+   margin: 0 0;
+   padding: 4px 4px 0 12px;
+   line-height: 36px;
+   font-size: 18px;
+   color: white;
+   font-family: "Roboto:wght@400";
+   text-transform: uppercase;
+}
+
+
+.price {
+  margin: 0 0;
+   padding: 4px 0;
+   font-size: 18px;
+   line-height: 32px;
+   text-align: center;
+   color: white;
+}
+
+
+.overlay {
+   width: 255px;
+   height: 283px;
+   position: absolute;
+   left: 0;
+   top: 0;
+   border: 10px solid rgba(255,255,255,0.5);
+   background-clip: padding-box;
+   background-color: rgba(0, 0, 0, 0.5);
+   display: none;
+}
+
+
+.overlay-list-button {
+   border: 1px solid rgb(255, 255, 255);
+   background-repeat: no-repeat;
+   background-color: transparent; 
+   cursor: pointer;
+}
+
+.overlay-list-button-heart {
+    background-image: url(../images/icon/images/heart.png);
+    width: 50px;
+    height: 50px;
+    background-position: center;
+}
+
+
+.overlay-list-button-choice {
+    background-image: url(../images/icon/images/choice.png);
+    width: 50px;
+    height: 50px;
+    background-position: center;
+}
+
+.overlay-list-button-clock {
+    background-image: url(../images/icon/images/clock.png);
+    width: 50px;
+    height: 50px;
+    background-position: center;
+}
+
+.overlay-list-button-add-cart {
+    background-image: url(../images/icon/images/cart.svg);
+    background-position: left 12px center;
+    width: 163px;
+    height: 47px;
+    color: white;
+    background-color: rgb(50, 50, 50);
+    text-transform: uppercase;
+    text-align: right;
+}
+
+
+.overlay-list-button:hover {
+    background-color: rgb(127, 217, 199);
+   
+}
+
+.overlay-list-item {
+    float: left;
+    margin-bottom: 6px;
+}
+
+.overlay-list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 170px;
+}
+
+.overlay-list-item:not(:last-child) {
+    margin-right: 6px;
+}
+
+.add-to-cart {
+    font-family: "Open+Sans" sans-serif;
+    margin-right: 15px;
+    font-size: 14px;
+    line-height: 32px;
+    letter-spacing: -0.28px;
+}
+
+
+.footer {
+    background-color: rgb(50, 50, 50);
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.owner {
+    font-size: 16px;
+    line-height: 26px;
+    color: white;
+    font-family: "Open+Sans" sans-serif;
+    padding: 36px 0 30px 0;
+    text-align: center;
+}
+
+.owner-link {
+    color: rgb(26, 188, 156);
+}
+
+
+
+
+ 
+  
+
+
+
+
