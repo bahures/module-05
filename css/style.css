@@ -243,7 +243,7 @@ ol {
 }
 
 
-.collection-item:hover .item-price {
+.collection-item:hover .price {
    background-color: rgb(127, 217, 199);
 }
 
